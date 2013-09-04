@@ -17,11 +17,11 @@
 			echo -n "url('$TM_DROPPED_FILE')"
 		fi
 	else 
-		echo -ne "background:\${1: #\${2:DDD}} url('$TM_DROPPED_FILE')\${3: \${4:repeat/repeat-x/repeat-y/no-repeat} \${5:scroll/fixed} \${6:top/center/bottom/x-%/x-pos} \${7:left/center/right/y-%/y-pos}};\n\$0"
+		echo -ne "background:\${1: #\${2:DDD}} url('$TM_DROPPED_FILE')\${3: \${4:repeat/repeat-x/repeat-y/no-repeat} \${5:scroll/fixed} \${6:top/center/bottom/x-%/x-pos} \${7:left/center/right/y-%/y-pos}};\n\;$0"
 	fi
 else
 	echo -ne "\${1:#selector} {\n	background: url('$TM_DROPPED_FILE')\${3: \${4:no-repeat} \${5:scroll} \${6:top} \${7:left}};\n"
-	sips -g pixelWidth -g pixelHeight "$TM_DROPPED_FILE"|awk '/pixelWidth/  { printf("	width: %dpx;\n",  $2) } /pixelHeight/ { printf("	height: %dpx;\n}\$0", $2) }'
+	sips -g pixelWidth -g pixelHeight "$TM_DROPPED_FILE"|awk '/pixelWidth/  { printf("	width: %dpx;\n",  $2) } /pixelHeight/ { printf("	height: %dpx;\n}\;$0", $2) }'
 fi</string>
 	<key>draggedFileExtensions</key>
 	<array>
