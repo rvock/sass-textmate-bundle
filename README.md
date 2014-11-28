@@ -36,4 +36,4 @@ You may find that when you open files with the `.sass` extension, Sublime Text 2
 ## About & Credit
 This was originally a fork of <https://github.com/seaofclouds/sass-textmate-bundle>, and includes the best contributions of people [throughout the network](https://github.com/nathos/sass-textmate-bundle/network).
 
-Features include imprpoved syntax highlighting, [Zen Coding](http://code.google.com/p/zen-coding/)-style property autocompletion, and more.
+Features include improved syntax highlighting, [Zen Coding](http://code.google.com/p/zen-coding/)-style property autocompletion, and more.
