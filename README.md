@@ -1,4 +1,4 @@
-# Sass for TextMate/Sublime Text 2
+# Sass for TextMate/Sublime Text 2 & 3
 
 ## What's this thingie?
 
@@ -19,7 +19,7 @@ This add-on adds syntax highlighting and tab/code completion for Sass and SCSS f
     mkdir sass-textmate-bundle.tmbundle && curl -L https://github.com/nathos/sass-textmate-bundle/tarball/master | tar xz --strip 1 -C sass-textmate-bundle.tmbundle
     osascript -e 'tell app "TextMate" to reload bundles'
 
-## Sublime Text 2 Installation
+## Sublime Text 2 & 3 Installation
 
 ### With Sublime Package Control
 
@@ -37,11 +37,11 @@ From within Sublime Text go to:
 Right-click and select:
 ```Git Bash Here```
 
-From the Git Bash: 
+From the Git Bash:
 ```git clone https://github.com/nathos/sass-textmate-bundle.git```
 
 Restart Sublime Text.
-    
+
 ### Putting HAML in its place
 
 You may find that when you open files with the `.sass` extension, Sublime Text 2 initially interprets the syntax as HAML. To permanently fix this, open `Packages/Rails/Ruby Haml.tmLanguage` and delete the line `<string>sass</string>`.
